@@ -297,7 +297,7 @@
             </section>
 
             <footer class="text-center py-3 bg-primary text-light">
-                <b>&#169;2020 Aqshal Zakki | All Right Reserved</b>
+                <b>&#169;<span id="year"></span> Aqshal Zakki | All Right Reserved</b>
             </footer>
         </div>
         <!-- Bootstrap core JS-->
@@ -307,5 +307,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+           document.getElementById('year').textContent = (new Date).getFullYear()
+        </script>
     </body>
 </html>
